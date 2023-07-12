@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <h1 class="heading">To do List</h1>
-    <input type="text" class="inputfield" placeholder="Add new item">
-    <button class="submitbutton">ADD</button>
-    <ul class="itemscontainer">
-        <li class="item" >Make to do app
-            <button class="deletebutton">x</button>
+<body class="m-5 bg-slate-900 mt-12	">
+    <h1 class="heading text-center font-medium mb-2 text-white">My Tasks</h1>
+    <div class="inputcontainer text-center flex-1">
+    <input type="text" class="inputfield rounded border-orange-100" placeholder="  Add new item">
+    <button class="submitbutton px-3 pt-1 pb-1 rounded bg-slate-300 text-xs	">ADD</button>
+    </div>
+    <ul class="itemscontainer flex-1 text-center">
+        <li class="item bg-slate-900 text-white rounded mt-1 mr-1" >DO EPICS THINGS TODAY!
         </li>
-
-
+        <button class="resetbutton px-3 pt-1 pb-1 mt-4 rounded bg-slate-300 text-xs ">Remove All</button>
     </ul>
-
-
+    <footer>
+   
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
